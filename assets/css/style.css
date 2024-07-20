@@ -232,9 +232,7 @@ img{
 .icons{
     font-size: 32px;
 }
-.form{
-    
-}
+
 @keyframes animate{ 
     100%{
         transform: scaleX(1);
