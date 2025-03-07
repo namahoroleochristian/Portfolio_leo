@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root{
+    --color-body:#b6cbce;
+    --color-heading:#eef3db;
+    --color-base:linear-gradient(to right, #033f47, #00b894);
+    --color-base2: linear-gradient(to right, #033f47, #00b894);
+    --color-nav: #033f47;
+    --color-brand:#c0f780;
+    --color-brandimg:rgba(192, 247, 128, 0.676);
+    --color-brand2:#deff58;
+    --indicator-base:#deff58;
+    --sidebar-width:240px;
+    --font-base: "Bai jamjuree";
+    --color-progress-base:#000;
+
+}
+body{
+    background: var(--color-base2);
+    color: var(--color-body );
+    font-family: var(--font-base),sans-serif;
+}
+h1,h2,h3,h3,h4,h5,h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+        color: var(--color-body);
+        transition:all 0.4s ease;
+}
+a:hover{
+    color: var(--color-brand);
+
+}
+img{
+    width: 100%;
+}
+.navbar .nav-link{
+    text-transform: uppercase;
+    font-weight: 700px;
+    color:#fff;
+}
+.navbar .nav-link.active{
+    color: var(--color-brand2);
+}
+.navbar .nav-link:hover{
+    color: var(--color-brand2);
+}
+.navbar{
+    background-color: var(--color-nav);
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+.footerheight{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+.text-brand{
+    color: var(--color-brand2);
+}
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+
+}
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color:var(--color-brand) ;
+}
+.btn-brand:hover,
+.btn-brand:focus{
+    color: var(--color-base);
+    background-color: var(--color-brand2);
+    border-color:var(--color-brand2) ;
+}
+.link-custom{
+    position: relative;
+    font-weight: 700;
+
+}
+.link-custom::after{
+    content: "";
+    width: 0%;
+    background-color: var(--color-brand);
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: 0.5s;
+}
+.link-custom:hover:after{
+    width: 100%;
+}
+.bg-base{
+    background-color: var(--color-base);
+}
+.shadow-effect{
+    transition: 0.4s;
+}
+.shadow-effect:hover{
+    box-shadow:-3px 2px 0 2px var(--color-brand2);
+
+}
+.iconbox{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base2);
+}
+/* .slider-left{
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background-color: var(--color-base2);
+    color: var(--color-heading);
+    margin-top: 10%;
+}
+.slider-right{
+    height: 60px;
+    width: 100%;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background-color: var(--color-base2);
+    color: var(--color-heading);
+    margin-top: 10%;
+} */
+
+.wrapper{
+    display: flex;
+    overflow-x: auto;
+}
+.wrapper .item{
+    padding: 20px;
+    min-height: 200px;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.card-custom .card-custom-image{
+    overflow: hidden;
+}
+.card-custom .card-custom-image img{
+    transition: all 0.4s ease;
+    
+}
+.card-custom:hover .card-custom-image img{
+    transform:scale(1.1) ;
+}
+.container1{
+    /* margin-left: 5%; */
+    padding: 5%;
+}
+.container1 .technical-skills .technical-skill{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    margin-bottom: 2px;
+}
+.container1 .Personal-skills .technical-skill{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    margin-bottom: 2px;
+}
+
+
+.container1 .technical-bars{
+    font-size: 25px;
+}
+.container1 .technical-bars .bar{
+    margin: 4px;
+}
+.container1 .technical-bars .bar:first-child{
+    margin-top: 0;
+}
+
+.container1 .technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+
+.container1 .technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.container1 .technical-bars .bar .info span{
+      font-size: small;
+    font-weight: 500;
+    opacity: 10;
+    animation: showText 0.4s 1s linear forwards iteration-count direction fill-mode;
+}
+.container1 .technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-progress-base);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.row-skills {
+    display: grid; /* If using Bootstrap's default grid system, remove this line */
+    grid-template-columns: repeat(3, 1fr); /* Adjust for number of columns */
+    grid-column-gap: 10px; /* Adjust spacing as desired */
+  }
+.icons{
+    font-size: 32px;
+}
+#year{
+    width: 100%;
+    height: 100px;
+    background: #000;
+    color: #fff;
+}
+
+@keyframes animate{ 
+    100%{
+        transform: scaleX(1);
+        
+    }
+}
+.technical-bars .bar .progress-line span{
+   height:  100%;
+   border-radius: 10px;
+   background-color: var(--color-brand2);
+   position: absolute;
+   animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
+   transform: scaleX(0);
+   transform-origin: left;
+}
+.progress-line .html{
+    width: 90%;
+}
+.progress-line .css{
+    width: 80%;
+}
+.progress-line .Javascript{
+    width: 70%;
+}
+.progress-line .node-js{
+    width: 75%;
+}
+.progress-line .vue-js{
+    width: 50%;
+}
+.progress-line .laravel{
+    width: 70%;
+}
+.progress-line .git{
+    width: 95%;
+}
+.progress-line .php{
+    width: 70%;
+}
+.progress-line .java{
+    width: 30%;
+}
+.progress-line .bootstrap{
+    width: 70%;
+}
+#form{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    background-color: filter-amount(20px);
+   
+}
+
+#message{
+    height: 140px;
+}
+
+.input{
+    background-color: #aaebd841;
+    /* color: #fff; */
+}
+.input:focus{
+    background-color: #ffffffbe;
+    border: 2px 2px solid #fff;
+}
+
+@media (min-width:922px){
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(to right, #033f47d7, #033f47),url('../images/portfolio.jpg');
+        background-size: cover;
+        background-position: center;
+
+    }
+    .navbar img{
+    border: 8px solid var(--color-brandimg);
+}
+#content-wrapper{
+    padding-left: var(--sidebar-width);
+}
+}
